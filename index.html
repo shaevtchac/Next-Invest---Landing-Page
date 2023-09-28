@@ -22,7 +22,7 @@
                                                                             x
                                                                             x
 -->
-  <div class="bg-white py-5">
+  <div id="top" class="bg-white py-5">
     <nav class="max-w-screen-xl w-11/12 mx-auto flex justify-between  items-center">
       <!-- logo -->
       <div class="text-primary text-2xl font-bold leading-normal tracking-wider">NEXT INVEST</div>
@@ -30,12 +30,18 @@
       <div class="flex gap-6">
         <!-- links -->
         <div class="flex gap-4">
-          <a href="#"><button class="btn px-0">Investment Opportunities <svg width="16px" viewBox='0 0 16 16'>
+          <a href="#"><button class="btn px-0">Investment Opportunities 
+              <svg width="16px" viewBox='0 0 16 16' class="stroke-zinc-800">
                 <use href='#caret-down'></use>
-              </svg></button></a>
-          <a href="#"><button class="btn px-0">How It Works <svg width="16px" viewBox='0 0 16 16'>
+              </svg>
+            </button>
+          </a>
+          <a href="#"><button class="btn px-0">How It Works 
+              <svg width="16px" viewBox='0 0 16 16' class="stroke-zinc-800">
                 <use href='#caret-down'></use>
-              </svg></button></a>
+              </svg>
+            </button>
+          </a>
           <a href="#"><button class="btn px-0">About Us</button></a>
         </div>
         <!-- buttons -->
@@ -273,7 +279,7 @@
                                                                                 x
                                                                             xxxxx
 -->
-<div class="relative">
+<div class="relative my-32">
   <img src="img/Shape.png" width="306px" alt="decorative shape" class="absolute top-1/4 right-0">
     <div class="w-11/12 max-w-screen-xl mx-auto mt-20 flex gap-10 items-center relative">
       <!-- left -->
@@ -299,8 +305,78 @@
                                                                             x   x
                                                                             xxxxx
 -->
-  <div class="w-11/12 max-w-screen-xl mx-auto mt-20">
+  <div class="py-14 bg-gray-200 text-zinc-800">
+    <div class="w-11/12 max-w-screen-xl mx-auto">
+      <!-- container -->
+      <div class=" flex justify-between">
+        <div>
+          <div class="text-2xl font-bold  tracking-wider">NEXT INVEST</div>
+          <div class="text-[15px] mt-8">Copyright © 2020. LogoIpsum. All rights reserved.</div>
+        </div>
+        <div>
+          <div class="text-lg font-bold ">Services</div>
+          <ul class="mt-4 space-y-4">
+            <li><a href="#">Email Marketing</a></li>
+            <li><a href="#">Capaigns</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Offline</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-lg font-bold ">About</div>
+          <ul class="mt-4 space-y-4">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Benefits</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <!-- back to top -->
+        <a href="#top" title="Back to Top">
+          <button class="bg-primary aspect-square w-[50px] grid place-items-center rounded-full self-start" >
+            <svg viewPort="0 0 16 16" width="16" height="16" class="stroke-white ">
+              <use href="#caret-down" transform="scale(1 -1)" transform-origin="center"> </use>
+            </svg>
+          </button>
+        </a>
+      </div>
+      <!-- container 2 -->
+      <div class="flex justify-between mt-8">
 
+        <div>
+          <h3 class="text-2xl">Subscribe to our newsletter</h3>
+          <form action="" class="flex mt-4 ">
+            <input type="email" placeholder="email address" class="w-80 px-2 h-12 rounded-l-md">
+            <button type="submit" class="bg-secondary h-12 aspect-square grid place-items-center rounded-r-md" title="Submit your email for a newsletter">
+              <svg viewBox="0 0 16 16" width="16" class="stroke-white">
+                <use href="#caret-down" transform-origin="center" transform="rotate(-90)"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="flex gap-3 self-end">
+          <a href="#" title="Check our facebook profile">
+            <svg width="8" height="16" viewBox="0 0 8 16" class="fill-zinc-800">
+              <use href="#facebook"></use>
+            </svg>
+          </a>
+
+          <a href="#" title="Chec our twitter">
+            <svg width="21" height="16" viewBox="0 0 21 16" class="fill-zinc-800">
+              <use href="#twitter"></use>
+            </svg>
+          </a>
+
+          <a href="#" title="See our instagram">
+            <svg width="17" height="16" viewBox="0 0 17 16" class="fill-zinc-800">
+              <use href="#instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
   <!-- end footer -->
 
@@ -308,8 +384,23 @@
   <!-- SVGS -->
   <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
 
+    <symbol id="facebook" width="8" height="16" viewBox="0 0 8 16">
+      <path d="M6.4893 2.69808H7.93865V0.173805C7.6886 0.139407 6.82865 0.0620117 5.82714 0.0620117C3.73747 0.0620117 2.30598 1.37641 2.30598 3.7922V6.0155H0V8.83745H2.30598V15.938H5.13323V8.83811H7.34594L7.6972 6.01616H5.13257V4.07202C5.13323 3.25639 5.35285 2.69808 6.4893 2.69808Z" />
+    </symbol>
+
+    <symbol id="twitter" width="21" height="16" viewBox="0 0 21 16" >
+      <path d="M20.4942 1.93666C19.767 2.25566 18.9921 2.46711 18.1842 2.56978C19.0153 2.07355 19.6497 1.29378 19.9479 0.353886C19.173 0.815886 18.3174 1.14222 17.4057 1.32433C16.6699 0.540886 15.6212 0.0556641 14.4772 0.0556641C12.2577 0.0556641 10.4708 1.85722 10.4708 4.06578C10.4708 4.38355 10.4977 4.68911 10.5637 4.98C7.23066 4.81744 4.28144 3.22 2.30022 0.786553C1.95433 1.38666 1.75144 2.07355 1.75144 2.813C1.75144 4.20144 2.46644 5.43222 3.53222 6.14478C2.8881 6.13255 2.25622 5.94555 1.72088 5.651C1.72088 5.66322 1.72088 5.67911 1.72088 5.695C1.72088 7.64322 3.11055 9.26144 4.93288 9.63422C4.60655 9.72344 4.25088 9.76622 3.88177 9.76622C3.6251 9.76622 3.36599 9.75155 3.12277 9.69777C3.64222 11.2854 5.11621 12.4527 6.86888 12.4906C5.50488 13.5576 3.77299 14.2004 1.8981 14.2004C1.56933 14.2004 1.25399 14.1858 0.93866 14.1454C2.71455 15.2907 4.81922 15.9446 7.08888 15.9446C14.4662 15.9446 18.4995 9.83344 18.4995 4.53633C18.4995 4.35911 18.4934 4.188 18.4849 4.01811C19.2805 3.45344 19.9491 2.74822 20.4942 1.93666Z" />
+    </symbol>
+      
+    <symbol id="instagram" width="17" height="16" viewBox="0 0 17 16">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4942 0H11.4942C14.2552 0 16.4942 2.239 16.4942 5V11C16.4942 13.761 14.2552 16 11.4942 16H5.4942C2.7332 16 0.494202 13.761 0.494202 11V5C0.494202 2.239 2.7332 0 5.4942 0ZM11.4942 14.5C13.4242 14.5 14.9942 12.93 14.9942 11V5C14.9942 3.07 13.4242 1.5 11.4942 1.5H5.4942C3.5642 1.5 1.9942 3.07 1.9942 5V11C1.9942 12.93 3.5642 14.5 5.4942 14.5H11.4942Z"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.4942 8C4.4942 5.791 6.2852 4 8.4942 4C10.7032 4 12.4942 5.791 12.4942 8C12.4942 10.209 10.7032 12 8.4942 12C6.2852 12 4.4942 10.209 4.4942 8ZM5.9942 8C5.9942 9.378 7.1162 10.5 8.4942 10.5C9.8722 10.5 10.9942 9.378 10.9942 8C10.9942 6.621 9.8722 5.5 8.4942 5.5C7.1162 5.5 5.9942 6.621 5.9942 8Z"/>
+      <circle cx="12.7942" cy="3.69999" r="0.533" />
+    </symbol>
+      
+
     <symbol id="caret-down" width="16" height="16" fill="none" viewBox="0 0 16 16">
-      <path d="M13 6L8 11L3 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 6L8 11L3 6" stroke-linecap="round" stroke-linejoin="round" />
     </symbol>
 
     <symbol id="arrow-up" width="56" height="56" viewBox="0 0 56 56">
