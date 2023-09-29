@@ -1,4 +1,8 @@
+const nav = document.getElementById('main-nav');
 
+document.getElementById('menu-button').addEventListener('click', () => {
+  nav.setAttribute('aria-expanded', nav.ariaExpanded === 'true' ? 'false' : 'true');
+})
 
 // _______________________________________________________________ animations _______________________________________________________________
 
