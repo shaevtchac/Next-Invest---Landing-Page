@@ -24,7 +24,7 @@
 
 @layer components {
   .btn {
-    @apply px-10 pt-4 pb-3.5 bg-white justify-center items-center gap-1 inline-flex;
+    @apply px-10 pt-4 pb-3.5 bg-white justify-center items-center gap-1 inline-flex hover:brightness-90;
   }
 
 

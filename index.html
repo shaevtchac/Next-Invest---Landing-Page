@@ -13,7 +13,7 @@
   <script src="index.js" type="module"></script>
 </head>
 
-<body class="mx-auto   max-w-[1920px] font-josefin">
+<body class="mx-auto max-w-[1920px] font-josefin">
 
 
   <!--                  menu                                              x1x 
@@ -22,35 +22,42 @@
                                                                             x
                                                                             x
 -->
-  <div id="top" class="bg-white py-5 ">
-    <nav id="main-nav" aria-expanded="false" aria-controls="links" class="max-w-screen-xl w-11/12 mx-auto flex justify-between  items-center group">
+  <div id="top" class="bg-white py-5 relative z-10">
+    <nav id="main-nav" aria-expanded="false" aria-controls="links" class="max-w-screen-xl w-11/12 mx-auto flex justify-between  items-center group ">
       <!-- logo -->
       <div class="text-primary text-2xl font-bold leading-normal tracking-wider group-aria-expanded:hidden">NEXT INVEST</div>
       <!-- right -->
       <div id="links" class="lg:flex gap-6 hidden flex-col lg:flex-row group-aria-expanded:flex">
         <!-- links -->
         <ul class="flex flex-col lg:flex-row gap-4">
-          <li>
+          
+          <li class="relative group/inv">
             <a href="#"><button class="btn px-0">Investment Opportunities
-                <svg width="16px" viewBox='0 0 16 16' class="stroke-zinc-800">
-                  <use href='#caret-down'></use>
-                </svg>
-              </button>
-            </a>
-          </li>
-          <li class="relative">
-            <a href="#"><button class="btn px-0">How It Works
-                <svg width="16px" viewBox='0 0 16 16' class="stroke-zinc-800">
+                <svg width="16px" viewBox='0 0 16 16' class="stroke-zinc-800 origin-center group-hover/inv:-scale-y-100">
                   <use href='#caret-down'></use>
                 </svg>
               </button>
             </a>
             <!-- dropdown list -->
-            <!-- <ul class="absolute top-10 left-0 w-fit">
-              <li><a href="#"><button class="btn">link #1</button></a></li>
-              <li><a href="#"><button class="btn">link #2</button></a></li>
-              <li><a href="#"><button class="btn">link #3</button></a></li>
-            </ul> -->
+            <ul class="hidden absolute top-12 left-0 bg-white group-hover/inv:block z-20">
+              <li><a href="#"><button class="btn w-full">link&nbsp;#1</button></a></li>
+              <li><a href="#"><button class="btn w-full">link&nbsp;#2</button></a></li>
+              <li><a href="#"><button class="btn w-full">link&nbsp;#3</button></a></li>
+            </ul>
+          </li>
+          <li class="relative group/how">
+            <a href="#"><button class="btn px-0">How It Works
+                <svg width="16px" viewBox='0 0 16 16' class="stroke-zinc-800 origin-center group-hover/how:-scale-y-100">
+                  <use href='#caret-down'></use>
+                </svg>
+              </button>
+            </a>
+            <!-- dropdown list -->
+            <ul class="hidden absolute top-12 left-0 bg-white group-hover/how:block z-20">
+              <li><a href="#"><button class="btn  w-full">link&nbsp;#1</button></a></li>
+              <li><a href="#"><button class="btn w-full">link&nbsp;#2</button></a></li>
+              <li><a href="#"><button class="btn w-full">link&nbsp;#3</button></a></li>
+            </ul>
           </li>
           <li><a href="#"><button class="btn px-0">About Us</button></a></li>
         </ul>
@@ -87,10 +94,10 @@
         <!-- circle -->
         <div class="aspect-square w-[558px] rounded-full bg-[#336EE1] bg-opacity-50 absolute -top-[26%] -left-[19%]">
         </div>
-        <h1 class=" text-white text-6xl font-bold  leading-[80px] relative">Meaningful investments in<br />Main Street
+        <h1 class=" text-white [font-size:clamp(2rem,1.65rem+1.75vw,3.75rem)] font-bold  leading-relaxed relative">Meaningful investments in<br />Main Street
           businesses
         </h1>
-        <p class="w-[470px] text-white text-2xl  leading-loose relative">Browse vetted investment offerings in
+        <p class=" text-white [font-size:clamp(1rem,0.8rem+1vw,2rem)]  leading-loose relative">Browse vetted investment offerings in
           communities all
           over the US.</p>
         <button class="btn bg-primary px-10 pt-6 w-[270px] pb-[22px] text-white font-bold self-start relative">GET
@@ -109,8 +116,8 @@
   <div class="relative">
     <img src="img/Shape.png" width="306px" alt="a decorative shape" class="absolute left-4 top-1/2 -translate-y-1/2">
     <div class="w-11/12 max-w-screen-xl mx-auto mt-20 relative">
-      <h2 class=" text-center text-zinc-800 text-5xl font-bold leading-[64px]">Offerings open for investment</h2>
-      <p class="max-w-prose mx-auto text-center text-neutral-400 text-2xl font-normal leading-loose">Explore pre-vetted
+      <h2 class=" text-center text-zinc-800 [font-size:clamp(2rem,0.6rem+2vw,3rem)] font-bold leading-[64px]">Offerings open for investment</h2>
+      <p class="max-w-prose mx-auto text-center text-neutral-400 [font-size:clamp(1rem,0.8rem+1vw,2rem)] font-normal leading-loose">Explore pre-vetted
         investment opportunities available in a growing number of industry categories.</p>
       <!-- container -->
       <div class="flex gap-x-7 gap-y-9 flex-wrap justify-center relative">
@@ -258,7 +265,7 @@
                                                                                 x
                                                                                 x
 -->
-  <div class="bg-indigo-50 py-40 my-20 relative">
+  <div class="bg-indigo-50 py-24 my-20 relative">
     <!-- decorators -->
     <svg viewBox="0 0 608 425" class="w-1/3 absolute left-0 bottom-0">
       <use href="#shape"></use>
@@ -273,20 +280,20 @@
     </svg>
 
     <!-- container -->
-    <div class="w-11/12 max-w-screen-xl mx-auto mt-32 flex gap-10 relative z-10">
+    <div class="w-11/12 max-w-screen-xl mx-auto flex flex-wrap gap-10 relative z-10">
       <!-- left -->
-      <div class="flex-1">
+      <div class="[flex:1_1_400px]">
         <svg width="56" viewBox="0 0 56 56" class="fill-primary">
           <use href="#arrow-up"></use>
         </svg>
-        <h2 class=" text-zinc-800 text-5xl font-bold mt-10">$7M+ paid out to investors</h2>
-        <p class=" text-neutral-400 text-2xl mt-6 leading-loose">Next Invest has already paid out over $7M in cash
+        <h2 class=" text-zinc-800 [font-size:clamp(2rem,0.6rem+2vw,3rem)] font-bold mt-10">$7M+ paid out to investors</h2>
+        <p class=" text-neutral-400 [font-size:clamp(1rem,0.8rem+1vw,2rem)] mt-6 leading-loose">Next Invest has already paid out over $7M in cash
           returns to investors. Earn potential cash payments through unique revenue-share and debt financing
           investments.</p>
       </div>
 
       <!-- right -->
-      <svg width="570" height="357" viewBox="0 0 570 357" class="flex-1">
+      <svg width="570" height="357" viewBox="0 0 570 357" class="[flex:1_1_400px]">
         <use href="#chart"></use>
       </svg>
     </div>
@@ -302,16 +309,16 @@
 -->
   <div class="relative my-32">
     <img src="img/Shape.png" width="306px" alt="decorative shape" class="absolute top-1/4 right-0">
-    <div class="w-11/12 max-w-screen-xl mx-auto mt-20 flex gap-10 items-center relative">
+    <div class="w-11/12 max-w-screen-xl mx-auto mt-20 flex flex-wrap gap-10 items-center relative">
       <!-- left -->
-      <div class="flex-1">
-        <h2 class="text-zinc-800 text-5xl font-bold">Looking to raise capital<br />for your growing business?</h2>
-        <p class=" text-neutral-400 text-2xl leading-loose mt-6">Whether expanding or opening a brand-new concept, we
+      <div class="[flex:1_1_300px]">
+        <h2 class="text-zinc-800 [font-size:clamp(2rem,0.6rem+2vw,3rem)] font-bold">Looking to raise capital<br />for your growing business?</h2>
+        <p class=" text-neutral-400 [font-size:clamp(1rem,0.8rem+1vw,2rem)] leading-loose mt-6">Whether expanding or opening a brand-new concept, we
           make it easy to raise money from thousands of local investors.</p>
         <button class="bg-primary text-white w-[270px] h-[70px] mt-10">APPLY ONLINE</button>
       </div>
       <!-- right -->
-      <div class="flex-1">
+      <div class="[flex:1_1_300px]">
         <svg viewBox="0 0 470 462">
           <use href="#investing-img"></use>
         </svg>
@@ -330,12 +337,12 @@
   <div class="py-14 bg-gray-200 text-zinc-800">
     <div class="w-11/12 max-w-screen-xl mx-auto">
       <!-- container -->
-      <div class=" flex justify-between">
-        <div>
-          <div class="text-2xl font-bold  tracking-wider">NEXT INVEST</div>
+      <div class="flex flex-wrap justify-between gap-10">
+        <div class="[flex:1_1_300px]">
+          <div class="[font-size:clamp(1rem,0.8rem+1vw,2rem)] font-bold  tracking-wider">NEXT INVEST</div>
           <div class="text-[15px] mt-8">Copyright © 2020. LogoIpsum. All rights reserved.</div>
         </div>
-        <div>
+        <div class="[flex:1_1_200px]">
           <div class="text-lg font-bold ">Services</div>
           <ul class="mt-4 space-y-4">
             <li><a href="#">Email Marketing</a></li>
@@ -344,7 +351,7 @@
             <li><a href="#">Offline</a></li>
           </ul>
         </div>
-        <div>
+        <div class="[flex:1_1_200px]">
           <div class="text-lg font-bold ">About</div>
           <ul class="mt-4 space-y-4">
             <li><a href="#">Our Story</a></li>
@@ -363,12 +370,12 @@
         </a>
       </div>
       <!-- container 2 -->
-      <div class="flex justify-between mt-8">
+      <div class="flex flex-wrap justify-between gap-10 mt-8">
 
-        <div>
-          <h3 class="text-2xl">Subscribe to our newsletter</h3>
-          <form action="" class="flex mt-4 ">
-            <input type="email" placeholder="email address" class="w-80 px-2 h-12 rounded-l-md">
+        <div class="flex-grow">
+          <h3 class="[font-size:clamp(1rem,0.8rem+1vw,2rem)]">Subscribe to our newsletter</h3>
+          <form action="" class="flex  mt-4 ">
+            <input type="email" placeholder="email address" class="w-[calc(100%-48px)] max-w-xs px-2 h-12 rounded-l-md">
             <button type="submit" class="bg-secondary h-12 aspect-square grid place-items-center rounded-r-md"
               title="Submit your email for a newsletter">
               <svg viewBox="0 0 16 16" width="16" class="stroke-white">
